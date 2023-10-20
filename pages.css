@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Poppins:wght@300&display=swap');
+
+
+body{
+    margin: 0px auto;
+    max-width: 1600px;
+    padding: 0;
+    color: #494949;
+}
+
+a{
+    text-decoration: none;
+    cursor: pointer;
+}
+
+ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.headings{
+    font-family: 'Dancing Script';
+    color: #2c2c2c;
+}
+
+.header{
+    display: flex;
+    gap: 30px;
+    padding: 20px 50px;
+    box-shadow: 0 -2px 5px rgba(0,0,0,.5);
+    justify-content: space-between;
+    background: linear-gradient(to right, rgba(22, 207, 164, 1) 0, rgba(52, 116, 189, 1) 25%, rgba(163, 34, 126, 1) 50%, rgba(207, 2, 101, 1) 75%, rgba(211, 182, 40, 1) 100%)!important;
+}
+
+.right-header{
+    display: flex;  
+}
+
+ul.nav{
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    justify-content: space-between;
+    text-transform: uppercase;
+}
+
+ul.nav a{
+    text-decoration: none;
+    color: #fff;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+ul.nav a:hover, a:hover{
+    color: #16cfa4;
+}
+
+ul.nav a.active{
+  color: #16cfa4;
+}
+
+.left-header img{
+    width: 60px;
+}
+
+
+/* product page */
+
+.product-banner{
+    background-image: url('images/product-bg.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    color: #fff;
+}
+
+.products-imgs{
+    width: 200px;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    margin: 0px auto;
+}
+
+.emulsion-desc{
+    padding: 15px 55px 0px 55px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.emul-prod{
+    padding: 30px 0px;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, .12), 0 1px 2px rgba(0, 0, 0, .24);
+    transition:.2s linear;
+    cursor: pointer;
+}
+
+.emul-prod:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 14px 28px rgba(0, 0, 0, .2);
+}
+
+.sizes{
+    background-color: #ffcc29;
+    font-weight: 700;
+    padding: 5px 5px 25px 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /* footer */
+
+  .footer{
+    background-image: url('images/footer-bg.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    color: #fff;
+  }
+
+  .footer .headings{
+    color: #fff;
+  }
+
+  /* .footer .row{
+    padding: 175px 50px 40px;
+  } */
+
+  .footer a{
+    color: #fff;
+    font-weight: 700;
+  }
+
+  .footer a:hover{
+    color: #e32228;
+  }
+
+  .footer ul{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+  }
+
+  .links-footer{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+  }
+
+  .links-footer p{
+    color: #fff;
+  }
+
+  .contact-links-footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .social-links i{
+    font-size: 24px;
+  }
+
+  .footer-logo{
+    width: 100px;
+  }
+
+
+/* fade effects */
+
+.reveal{
+    position: relative;
+    opacity: 0;
+  }
+  
+  .reveal.active {
+    opacity: 1;
+  }
+
+.active.fade-up {
+    animation: fade-up .5s ease-in;
+  }
+
+.active.fadeInImg{
+    animation: fadeInimg .5s ease-in;
+}
+
+  @keyframes fade-up {
+    0% {
+      transform: translateY(100px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
+@keyframes fadeInImg {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
